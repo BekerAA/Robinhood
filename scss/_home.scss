@@ -1,0 +1,148 @@
+.home__cap{
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: $web;
+margin: auto ;
+
+}
+
+.cap__one{
+  display: flex;
+  align-items: center;
+}
+.one__logo{
+  width: 142px;
+  margin: 0 24px;
+  a{
+    display: block;
+    height: 35px;
+  }
+}
+
+.one__button{
+  .level__one{
+    display: flex;
+    align-items: center;
+  }
+  .link{
+    margin: 0 24px;
+  }
+  .element{
+    display: flex;
+    align-items: center;
+    }
+    svg{
+      width: 12px;
+      height: 12px;
+      margin-left: 12px;
+    }
+    a{
+      color: $black;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $light__green;
+        transition: all 0.3s ease;
+      }
+      &:hover::after{
+        width: 100%;
+      }
+      &:hover{
+        font-size: 19px;
+        transition: 0.3s;
+      }
+
+    }
+  }
+
+.cap__two{
+  display: flex;
+  align-items: center;
+  margin: 8px 24px 8px 0;
+  .log__in{
+    margin-right: 20px;
+    a{
+      color: $black;
+      font-weight: bold;
+    }
+  }
+  .sign__up{
+    background-color: $gren;
+    padding: 10px 40px;
+    border-radius: 24px;
+    a{
+      color: $black;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.home__info{
+  background-color: $light__green;
+  width: 100vw;
+}
+
+.info{
+  max-width: $web;
+  margin: auto;
+  display: flex;
+}
+
+.info__one{
+  h3{
+    width: 300px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 46px;
+    margin: 94px 0 0  117px
+  }
+  h6{
+    width: 486px;
+    height: 144px;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 31px 0 19px 117px;
+  }
+  .button{
+    width: 144px;
+    margin-left: 117px;
+    a{
+      padding: 10px 40px;
+      background-color: $black;
+      border-radius: 24px;
+      color: $while;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+  .investment{
+    display: flex;
+    align-items:center; 
+    margin: 40px 0 0 117px;
+
+    svg{
+      width: 28px;
+      height: 28px;
+    }
+    h6{
+      width: 325px;
+      padding: 5px 0;
+      height: 28px;
+      font-weight: 400;
+      font-size: 18px;
+      align-items: center;
+      margin: 0 0 0 12px;
+    }
+  }
+}
+
+.info__two{
+  margin: 30px 117px 20px 18px;
+}
