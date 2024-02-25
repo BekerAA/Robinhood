@@ -1,88 +1,78 @@
-.home__cap{
-display: flex;
-align-items: center;
-justify-content: space-between;
-max-width: $web;
-margin: auto ;
-
+nav{
+  max-width: $web;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cap__one{
+.nav__one{
   display: flex;
   align-items: center;
 }
-.one__logo{
-  width: 142px;
-  margin: 0 24px;
+
+.logo{
   a{
     display: block;
     height: 35px;
+    margin: 0 24px;
+    svg{
+      width: 142px;
+    }
   }
 }
 
-.one__button{
-  .level__one{
-    display: flex;
-    align-items: center;
-  }
-  .link{
-    margin: 0 24px;
-  }
-  .element{
-    display: flex;
-    align-items: center;
-    }
-    svg{
-      width: 12px;
-      height: 12px;
-      margin-left: 12px;
-    }
-    a{
-      color: $black;
-      position: relative;
-      &::after{
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $light__green;
-        transition: all 0.3s ease;
-      }
-      &:hover::after{
-        width: 100%;
-      }
-      &:hover{
-        font-size: 19px;
-        transition: 0.3s;
-      }
-
-    }
-  }
-
-.cap__two{
+.top__menu{
   display: flex;
   align-items: center;
-  margin: 8px 24px 8px 0;
-  .log__in{
-    margin-right: 20px;
-    a{
-      color: $black;
-      font-weight: bold;
-    }
-  }
-  .sign__up{
-    background-color: $gren;
-    padding: 10px 40px;
-    border-radius: 24px;
-    a{
-      color: $black;
-      font-weight: bold;
-    }
+  li{
+    margin: 0 24px;
   }
 }
 
+.top__menu li:hover >  .sub__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0);
+}
+
+.element{
+  display: flex;
+  align-items: center;
+  a{
+    color: $black;
+    display: inline-block;
+    font-size: 18px;
+    &:hover{
+      font-size: 19px;
+      transition: all 0.3s ease;
+    }
+  }
+  svg{
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+  }
+}
+
+ .sub__menu{
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+  li{
+    margin: 0;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid $black;
+    width: 100%;
+    a{
+      color: $black;
+    }
+  }
+ }
 
 .home__info{
   background-color: $light__green;
