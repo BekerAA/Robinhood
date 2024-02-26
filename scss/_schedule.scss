@@ -1,0 +1,25 @@
+.schedule{
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+}
+
+.text{
+  max-width: $web;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 33px 0 32px 0;
+  h3{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a{
+    color: $black;
+    font-weight: 700;
+    border-bottom: 1px solid $black;
+    transition: all 0.5s ease;
+    &:hover{
+      color: $green;
+    }
+  }
+}

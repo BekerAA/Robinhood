@@ -1,7 +1,7 @@
 nav{
+  display: flex;
   max-width: $web;
   margin: auto;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -12,12 +12,13 @@ nav{
 }
 
 .logo{
+  margin: 0 24px;
   a{
-    display: block;
     height: 35px;
-    margin: 0 24px;
+    width: 143px;
+    display: block;
     svg{
-      width: 142px;
+      width: 143px;
     }
   }
 }
@@ -27,23 +28,19 @@ nav{
   align-items: center;
   li{
     margin: 0 24px;
+    display: block;
   }
-}
-
-.top__menu li:hover >  .sub__menu{
-  opacity: 1;
-  visibility: visible;
-  transform: rotateX(0);
 }
 
 .element{
   display: flex;
   align-items: center;
   a{
-    color: $black;
     display: inline-block;
     font-size: 18px;
+    color: $black;
     &:hover{
+      font-weight: bold;
       font-size: 19px;
       transition: all 0.3s ease;
     }
@@ -55,28 +52,70 @@ nav{
   }
 }
 
- .sub__menu{
+.sub__menu{
   position: absolute;
+  background-color: $green;
+  border-radius: 5px;
+  margin: 10px 0;
+  z-index: 5;
   transform-origin: 0 0;
   transform: rotateX(-90deg);
   transition: 0.3s linear;
   visibility: hidden;
   opacity: 0;
   li{
-    margin: 0;
     position: relative;
-    padding: 10px 0;
-    border-bottom: 1px solid $black;
-    width: 100%;
+    margin: 0;
+    padding: 10px;
     a{
       color: $black;
+      &:hover{
+        font-weight: bold;
+        font-size: 19px;
+        transition: all 0.3s ease;
+      }
     }
   }
- }
+}
+
+.top__menu li:hover >  .sub__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0);
+}
+
+.nav__two{
+  display: flex;
+  align-items: center;
+  .log__in{
+    font-size: 18px;
+    font-weight: bold;
+    color: $black;
+    &:hover{
+      color: $green;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+  .sign__up{
+     font-size: 17px;
+     font-weight: bold;
+     color: $black;
+     padding: 10px 40px;
+     background-color: $green;
+     border: 1px solid $green;
+     border-radius: 24px;
+     margin: 8px 24px 8px 18px;
+     transition: all 0.3s ease;
+     &:hover{
+      background-color: transparent;
+      border: 1px solid $green;
+     }
+  }
+}
 
 .home__info{
   background-color: $light__green;
-  width: 100vw;
 }
 
 .info{
@@ -110,6 +149,13 @@ nav{
       color: $while;
       font-size: 17px;
       font-weight: bold;
+      border: 1px solid black;
+      transition: all 0.5s ease;
+      &:hover{
+        background-color: transparent;
+        border-color: $black;
+        color: $black;
+      }
     }
   }
   .investment{

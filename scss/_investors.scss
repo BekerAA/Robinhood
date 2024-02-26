@@ -1,0 +1,48 @@
+.investors{
+  border-bottom: 1px solid  $black;
+}
+.inv{
+  max-width: $web;
+  margin: auto;
+  display: flex;
+}
+
+.inv__img{
+  margin-left: 13px;
+  height: 454px;
+  img{
+    width: 807px;
+  }
+}
+
+.inv__text{
+  h3{
+    font-size: 45px;
+    margin: 166px 0 26px 11px; 
+  }
+}
+
+.text__btn{
+  display: flex;
+  margin-left: 11px;
+  .see{
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    }
+  }
+  .arrow__black{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 10px;
+    
+    svg{
+      height: 24px;
+      transition: transform 0.5s;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
