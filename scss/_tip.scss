@@ -1,0 +1,45 @@
+.tip{
+  max-width: $web;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading{
+  h3{
+    font-weight: 500;
+    font-size: 31px;
+    margin-top: 48px;
+    margin-left: 117px;
+  }
+  h6{
+    font-weight: 400;
+    font-size: 17px;
+    color: $grey;
+    margin-top: 18px;
+    margin-left: 117px;
+  }
+  
+}
+
+.column{
+  ul{
+    display: flex;
+    margin-left: 117px;
+    margin-top: 48px;
+    li{
+      max-width: 245px;
+      margin-right: 60px;
+    }
+    h4{
+      font-weight: 700;
+      font-size: 18px;
+    }
+    h6{
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+.tip__two{}
